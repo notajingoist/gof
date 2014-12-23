@@ -1,0 +1,27 @@
+{
+  "name": "receipt-uploader",
+  "version": "0.0.0",
+  "description": "receipt uploader",
+  "main": "web.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/notajingoist/receipt-uploader.git"
+  },
+  "keywords": [
+    "receipt",
+    "uploader"
+  ],
+  "author": "Jing Xiao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/notajingoist/receipt-uploader/issues"
+  },
+  "homepage": "https://github.com/notajingoist/receipt-uploader",
+  "dependencies": {
+    "express": "^4.4.3",
+    "logfmt": "^1.1.2"
+  }
+}

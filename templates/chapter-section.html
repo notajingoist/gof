@@ -1,0 +1,50 @@
+<section class="chapter-container">
+	<section id="fish-chapter" class="chapter" ng-show="chapter.isSet(0)" ng-class="{ active:chapter.isSet(0) }" ng-controller="FishController as fish">
+		<div class="btn-set" ng-show="fish.isModeSet('both')">
+			<div class="btn btn-chapter-half" ng-click="fish.setMode('hairless')">waxed</div><!--
+			--><div class="btn btn-chapter-half" ng-click="fish.setMode('hairy')">au naturel</div>
+		</div>
+
+		
+		
+		<!-- <div class="wave"></div> -->
+
+		<div class="ripples">
+		</div>
+
+
+		<div class="foot left-foot" ng-show="fish.isModeSet('both')"></div>
+		<div class="foot right-foot hairy" ng-show="fish.isModeSet('both')"></div>
+
+		<div class="foot left-foot" ng-show="fish.isModeSet('hairless')"></div>
+		<div class="foot right-foot" ng-show="fish.isModeSet('hairless')"></div>
+
+		<div class="foot left-foot hairy" ng-show="fish.isModeSet('hairy')"></div>
+		<div class="foot right-foot hairy" ng-show="fish.isModeSet('hairy')"></div>
+
+		
+	
+		<!-- <canvas class="chapter-canvas" id="fish-canvas" resize>
+		</canvas> -->
+		
+		<!--<script type="text/paperscript" src="js/src/fish.js" canvas="fish-canvas">
+		</script>-->
+
+	</section>
+
+
+
+	<section id="oat-chapter" class="chapter" ng-show="chapter.isSet(1)" ng-class="{ active:chapter.isSet(1) }" ng-controller="OatController as oat">
+		<!-- <div class="btn btn-chapter" ng-click="chapter.setChapter(1)">coming soon</div> -->
+
+		<div class="oatmeal">
+		</div>
+	</section>
+
+	<section id="breakfast-chapter" class="chapter" ng-show="chapter.isSet(2)" ng-class="{ active:chapter.isSet(2) }">
+		<div class="btn btn-chapter" ng-click="chapter.setChapter(2)">nothing to see here</div>
+	</section>
+
+
+
+<section>

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en" class="no-js" ng-app="app">
+<head>
+	<meta charset="utf-8">
+	<title>gallery of feelings</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic|PT+Sans:400,700,400italic,700italic|Open+Sans:400italic,700italic,400,700|Gentium+Book+Basic:400,400italic,700,700italic|Raleway:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="stylesheets/css/style.css">
+	<script src="js/vendor/modernizr.js"></script>
+	<script src="js/vendor/paper-full.min.js"></script>
+</head>
+<body ng-controller="ChapterController as chapter">
+
+	<div class="gallery-container">
+		<!-- <div class="hi">adsjfklasdjfklasjdkfldsjaf </div> -->
+		<nav-contents></nav-contents>
+		<chapter-section>
+		</chapter-section>
+
+		<div class="canvas-container">
+			<canvas class="chapter-canvas" id="fish-canvas" resize ng-show="chapter.isSet(0)">
+			</canvas>
+		</div>
+		
+	</div>
+	
+
+
+	<!-- <section class="chapter-container" ng-controller="SectionController as section">
+		<section class="chapter chapter-1" ng-show="">
+			<div id="fetch-your-food" class="btn" ng-click="">fetch your food</div>
+
+		</section>
+
+
+		<section class="chapter chapter-2">
+			<div class="btn">analyze your food</div>
+		</section>
+	<section> -->
+	
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery.js"><\/script>')</script>
+<script src="js/vendor/util.js"></script>
+<script src="js/vendor/angular.min.js"></script>
+<!-- <script type="text/javascript" src="https://www.dropbox.com/static/api/2/dropins.js" id="dropboxjs" data-app-key="r7c5dri8vz5e97z"></script> -->
+<script src="js/src/app.js"></script>
+<script type="text/paperscript" src="js/src/fish.js" canvas="fish-canvas">
+</script>
+
+
+<!-- <script src="js/src/controllers.js"></script> -->
+<!-- <script src="js/src/scripts.js"></script> -->
+</body>
+</html>
